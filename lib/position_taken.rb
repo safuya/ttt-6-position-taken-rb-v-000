@@ -1,7 +1,7 @@
 def position_taken?(board, index)
   puts "Board slot: #{board[index]}"
   puts "Exec result: #{board[index] != ""}"
-  taken = (board[index] != " ") or (board[index] != "")
+  taken = board[index] != " " && board[index] != ""
   return taken
 end
 
